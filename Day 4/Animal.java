@@ -47,5 +47,4 @@ public class Animal {
     
         tikus.indentity_myself();
     }
-   
 }
