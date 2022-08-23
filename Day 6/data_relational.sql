@@ -36,3 +36,4 @@ INSERT INTO `product_description` VALUES (8, "ini adalah jaket", current_timesta
 -- select
 
 SELECT `name` FROM `users` WHERE `gender` = 'M';
+SELECT * FROM `products` WHERE `id` = 3;
