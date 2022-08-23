@@ -41,3 +41,9 @@ SELECT * FROM `products` WHERE `id` = 3;
 
 -- update 
 UPDATE `products` SET `name`='product_dummy' WHERE `id` = 1;
+UPDATE `transaction_detail` SET `qty`=3 WHERE `product_id` = 1;
+
+--delete
+
+DELETE FROM `products` WHERE `id` = 1;
+DELETE FROM `products` WHERE `product_type_id` = 1;
