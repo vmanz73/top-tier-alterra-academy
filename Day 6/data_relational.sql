@@ -37,3 +37,7 @@ INSERT INTO `product_description` VALUES (8, "ini adalah jaket", current_timesta
 
 SELECT `name` FROM `users` WHERE `gender` = 'M';
 SELECT * FROM `products` WHERE `id` = 3;
+
+
+-- update 
+UPDATE `products` SET `name`='product_dummy' WHERE `id` = 1;
