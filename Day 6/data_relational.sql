@@ -30,3 +30,9 @@ INSERT INTO `product_description` VALUES (5, "ini adalah meja", current_timestam
 INSERT INTO `product_description` VALUES (6, "ini adalah baju", current_timestamp(), current_timestamp());
 INSERT INTO `product_description` VALUES (7, "ini adalah celana", current_timestamp(), current_timestamp());
 INSERT INTO `product_description` VALUES (8, "ini adalah jaket", current_timestamp(), current_timestamp());
+
+
+
+-- select
+
+SELECT `name` FROM `users` WHERE `gender` = 'M';
