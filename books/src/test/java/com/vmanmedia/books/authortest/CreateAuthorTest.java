@@ -82,7 +82,7 @@ public class CreateAuthorTest {
     @Test
     public void success_get_authors_detail() throws Exception {
 
-        mvc.perform(MockMvcRequestBuilders.get("/api/v1/author/1")
+        mvc.perform(MockMvcRequestBuilders.get("/api/v1/author/" + this.author_id)
                         .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON))
                 .andDo(MockMvcResultHandlers.print())
@@ -106,7 +106,7 @@ public class CreateAuthorTest {
         request.setAddress(this.address);
         Date dob = Date.from(LocalDate.now().atStartOfDay(ZoneId.of("Asia/Jakarta")).toInstant());
         request.setDob(dob);
-        mvc.perform(MockMvcRequestBuilders.patch("/api/v1/author/1")
+        mvc.perform(MockMvcRequestBuilders.patch("/api/v1/author/" + this.author_id)
                         .content(new ObjectMapper().writeValueAsString(request))
                         .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON))
@@ -126,7 +126,7 @@ public class CreateAuthorTest {
         this.address = "Surabaya";
         this.author_id = 2;
         succses_create_author();
-        mvc.perform(MockMvcRequestBuilders.delete("/api/v1/author/2")
+        mvc.perform(MockMvcRequestBuilders.delete("/api/v1/author/" + this.author_id)
                 .contentType(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON))
                 .andDo(MockMvcResultHandlers.print())
