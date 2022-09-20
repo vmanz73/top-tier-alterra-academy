@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 1 - fe - register</title>
+    <style>
+        .form-build{
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Buat Account Baru!</h1>
+    </div>
+    <div>
+        <form action="welcome.html" method="get">
+            <div class="form-build">
+                <label for="first_name">First Name :</label><br>
+                <input type="text" name="first_name" id="first_name">
+            </div>
+            <div class="form-build">
+                <label for="first_name">Last Name :</label><br>
+                <input type="text" name="last_name" id="last_name">
+            </div>
+            <div class="form-build">
+                <label for="gender">Gender : </label><br>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" name="gender" id="other" value="other">
+                <label for="other">Other</label>
+            </div>
+            <div class="form-build">
+                <label for="country"> Nasiolanity :</label><br>
+                <select name="countries" id="countries">
+                    <option value="indonesia">Indonesia</option>
+                    <option value="malaysia">Malaysia</option>
+                    <option value="thailand">Thailand</option>
+                </select>
+            </div>
+            <div class="form-build">
+                <label for="language"> Language Spoken</label><br>
+                <input type="checkbox" name="language" id="bahasa">
+                <label for="bahasa">Bahasa Indonesia</label><br>
+                <input type="checkbox" name="language" id="english">
+                <label for="english">English</label><br> 
+                <input type="checkbox" name="language" id="other">
+                <label for="other">Other</label>
+            </div>
+            <div class="form-build">
+                <label for="bio">Bio :</label><br>
+                <textarea name="bio" id="bio" cols="50" rows="10"></textarea>
+            </div>
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+</body>
+</html>
