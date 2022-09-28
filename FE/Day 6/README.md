@@ -1,1 +1,1 @@
-![alt text](run-prject.pnd)
+![alt text](run-prject.png)
