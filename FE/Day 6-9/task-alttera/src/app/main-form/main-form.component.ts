@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { from, interval, Subscription } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-main-form',
@@ -7,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainFormComponent implements OnInit {
   data: { [id: string]: any } = {};
+
 
   constructor() {}
 
@@ -18,6 +21,7 @@ export class MainFormComponent implements OnInit {
     let city = (<HTMLInputElement>document.getElementById('city')).value;
     console.log(name);
     console.log(city);
+
     this.data[id] = {
       "name": name,
       "city": city,
