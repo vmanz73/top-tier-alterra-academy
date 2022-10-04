@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <app-passenger-form></app-passenger-form>
+    </div>
+    <div class="col-md-6">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">Name</th>
+            <th scope="col">City</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr  *ngFor="let data_user of data; let i=index">
+            <th scope="row">{{i}}</th>
+            <td>{{data_user.name}}</td>
+            <td>{{data_user.city}}</td>
+            <td>
+              <button type="button" class="btn btn-warning mx-1" (click)="edit(i, data_user)">Edit</button>
+              <button type="button" class="btn btn-danger mx-1" (click)="delete(i)">Delete</button>
+              <button type="button" class="btn btn-primary mx-1" routerLink="/passenger/{{i}}">Detail</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
