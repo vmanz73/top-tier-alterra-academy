@@ -8,6 +8,10 @@ import { NavbarComponent } from './component/navbar/navbar.component';
 import { PassengerFormComponent } from './component/passenger-form/passenger-form.component';
 import { PassengerComponent } from './component/passenger/passenger.component';
 import { PassengerDetailComponent } from './component/passenger-detail/passenger-detail.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ArticleListComponent } from './component/article-list/article-list.component';
+import { ArticleFormComponent } from './component/article-form/article-form.component';
+import { ArticleDetailComponent } from './component/article-detail/article-detail.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +20,18 @@ import { PassengerDetailComponent } from './component/passenger-detail/passenger
     NavbarComponent,
     PassengerFormComponent,
     PassengerComponent,
-    PassengerDetailComponent
+    PassengerDetailComponent,
+    ArticleListComponent,
+    ArticleFormComponent,
+    ArticleDetailComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
